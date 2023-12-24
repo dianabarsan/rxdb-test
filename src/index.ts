@@ -50,9 +50,10 @@ const setupDb = async ():Promise<RxDatabase<any, any>> => {
       { 'parent._id': { '$in': ["38e7c2f5-2c80-5822-84eb-2930fa65baea", "a1e164af-8bd0-5e90-8ca4-a134b097078d"] } }
     ] } }).exec());
 
-  // const contacts = await database.contacts.find({ selector: { patient_id: '80012' } as ContactDocType }).exec();
-  // console.log(contacts);
-  //console.log(await database.reports.find({ selector: { 'fields.patient_uuid': '9925008f-9c5c-5603-8550-40f609bd61e14' }}).exec());
+  // @ts-ignore
+  const contacts = await database.contacts.find({ selector: { patient_id: '80012' } as ContactDocType }).exec();
+  // @ts-ignore
+  console.log(await database.reports.find({ selector: { 'fields.patient_uuid': '9925008f-9c5c-5603-8550-40f609bd61e14' }}).exec());
 
   // @ts-ignore
   addEventListener("unload", () => database.destroy());

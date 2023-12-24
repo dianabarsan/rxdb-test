@@ -6,7 +6,6 @@ const minify = (parent:any) => {
   const result = minify;
   while (parent) {
     Object.assign(minify, { _id: parent._id, parent: {} });
-    console.log(minify);
     minify = minify.parent;
     parent = parent.parent;
   }
