@@ -1,0 +1,7 @@
+/data/json_docs/
+/data/compile.js
+/dist/
+/node_modules/
+.idea
+/src/**/*.js
+/src/**/*.js.map

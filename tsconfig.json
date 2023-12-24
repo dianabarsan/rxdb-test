@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2020",
+      "ES2021.WeakRef",
+      "dom"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "target": "ES6",
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.spec.ts", "node_modules"]
+}
